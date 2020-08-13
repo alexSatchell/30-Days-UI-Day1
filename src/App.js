@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import { MdCreate } from 'react-icons/md';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -137,10 +136,10 @@ const FormTitle = styled.h1`
   font-weight: 500;
 `;
 
-const Icon = styled.i`
-  font-size: 30px;
-  margin-right: 10px;
-`;
+// const Icon = styled.i`
+//   font-size: 30px;
+//   margin-right: 10px;
+// `;
 
 const Accent = styled.div`
   position: absolute;
@@ -180,7 +179,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <Fragment>
       <GlobalStyle />
       <Container>
         <FormOffsetContainer>
@@ -232,7 +231,7 @@ const App = () => {
           </Form>
         </FormOffsetContainer>
       </Container>
-    </>
+    </Fragment>
   );
 };
 
